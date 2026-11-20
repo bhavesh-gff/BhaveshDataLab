@@ -9,10 +9,10 @@ interface ContactSectionProps {
 
 export default function ContactSection({ onCursorChange }: Readonly<ContactSectionProps>) {
   return (
-    <section id="contact" className="flex justify-center bg-[#242323] px-4 py-20 sm:py-24">
+    <section id="contact" className="relative flex justify-center border-t border-[#26354C] bg-[#111D32] px-4 py-20 sm:py-24">
       <div className="w-full max-w-5xl p-6 text-center sm:p-10">
-        <div className="text-[10px] font-medium tracking-[0.22em] text-[#F15A24] uppercase">Let&apos;s Connect</div>
-        <h2 className="mt-3 text-3xl font-semibold text-[#FFFCF2] sm:text-4xl">I&apos;m open to data projects, collaborations, and meaningful opportunities.</h2>
+        <div className="text-[10px] font-medium tracking-[0.22em] text-[#38BDF8] uppercase">Let&apos;s Connect</div>
+        <h2 className="mt-3 text-3xl font-semibold text-[#F8FAFC] sm:text-4xl">I&apos;m open to data projects, collaborations, and meaningful opportunities.</h2>
 
         <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
           {socialLinks.map((social) => {
@@ -27,11 +27,11 @@ export default function ContactSection({ onCursorChange }: Readonly<ContactSecti
                 href={isEmail ? "https://mail.google.com/mail/?view=cm&fs=1&to=bhaveshsuthar08835@gmail.com" : social.url}
                 target={isEmail ? undefined : "_blank"}
                 rel={isEmail ? undefined : "noopener noreferrer"}
-                className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#8A857D] bg-transparent px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#FFFCF2] hover:border-[#F15A24] hover:bg-[#3F3D3B]"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#26354C] bg-[#0B1220] px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#F8FAFC] hover:border-[#38BDF8] hover:bg-[#1A2A43]"
                 onMouseEnter={() => onCursorChange(social.platform.toUpperCase())}
                 onMouseLeave={() => onCursorChange("")}
               >
-                <Icon size={16} className="text-[#F15A24]" />
+                <Icon size={16} className="text-[#38BDF8]" />
                 <span>{isEmail ? "MAIL" : social.platform.toUpperCase()}</span>
               </a>
             );
@@ -40,7 +40,7 @@ export default function ContactSection({ onCursorChange }: Readonly<ContactSecti
           <a
             href="/bhavesh-suthar-resume.txt"
             download="Bhavesh-Suthar-Resume.txt"
-            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#F15A24] px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#FFFCF2] hover:bg-[#D94C1B]"
+            className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#38BDF8] px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#0B1220] hover:bg-[#7DD3FC]"
             onMouseEnter={() => onCursorChange("DOWNLOAD")}
             onMouseLeave={() => onCursorChange("")}
           >

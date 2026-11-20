@@ -15,21 +15,21 @@ export default function RecruiterViewSection({ onCursorChange }: Readonly<Recrui
     <section className="flex justify-center px-4 pb-6 pt-2 sm:pb-10">
       <div className="w-full max-w-7xl">
         <motion.div
-          className="rounded-2xl border border-[#D8D3C8] bg-[#F4F1E9] p-5 shadow-[0_20px_60px_rgba(36,35,35,0.08)] sm:p-8"
+          className="rounded-2xl border border-[#26354C] bg-[#111D32] p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] sm:p-8"
           initial={{ opacity: 0, y: 18 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="mb-6 flex items-center justify-between gap-4 border-b border-[#D8D3C8] pb-4">
+          <div className="mb-6 flex items-center justify-between gap-4 border-b border-[#26354C] pb-4">
             <div>
-              <div className="text-[10px] font-medium tracking-[0.22em] text-[#F15A24] uppercase">Recruiter Snapshot</div>
-              <h2 className="mt-2 text-xl font-semibold text-[#242323] sm:text-2xl">Data analyst with a strong analytical foundation.</h2>
+              <div className="text-[10px] font-medium tracking-[0.22em] text-[#38BDF8] uppercase">Recruiter Snapshot</div>
+              <h2 className="mt-2 text-xl font-semibold text-[#F8FAFC] sm:text-2xl">Data analyst with a strong analytical foundation.</h2>
             </div>
             <a
               href="/bhavesh-suthar-resume.txt"
               download="Bhavesh-Suthar-Resume.txt"
-              className="hidden items-center gap-2 rounded-lg border border-[#242323] bg-[#242323] px-4 py-2 text-[10px] font-semibold tracking-[0.16em] text-[#FFFCF2] sm:inline-flex"
+              className="hidden items-center gap-2 rounded-lg border border-[#38BDF8] bg-[#38BDF8] px-4 py-2 text-[10px] font-semibold tracking-[0.16em] text-[#0B1220] sm:inline-flex"
             >
               <Download size={14} />
               RESUME
@@ -37,30 +37,30 @@ export default function RecruiterViewSection({ onCursorChange }: Readonly<Recrui
           </div>
 
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-5">
-            <div className="rounded-xl border border-[#D8D3C8] bg-[#FFFCF2] p-4">
-              <div className="text-[10px] font-medium tracking-[0.18em] text-[#8ea0b6] uppercase">Target Role</div>
-              <div className="mt-3 text-sm font-medium text-[#242323]">Data Analyst → Aspiring Data Scientist</div>
+            <div className="rounded-xl border border-[#26354C] bg-[#0B1220] p-4">
+              <div className="text-[10px] font-medium tracking-[0.18em] text-[#94A3B8] uppercase">Target Role</div>
+              <div className="mt-3 text-sm font-medium text-[#F8FAFC]">Data Analyst → Aspiring Data Scientist</div>
             </div>
 
-            <div className="rounded-xl border border-[#D8D3C8] bg-[#FFFCF2] p-4">
-              <div className="text-[10px] font-medium tracking-[0.18em] text-[#8ea0b6] uppercase">Education</div>
-              <div className="mt-3 text-sm font-medium text-[#242323]">{profileData.education}</div>
+            <div className="rounded-xl border border-[#26354C] bg-[#0B1220] p-4">
+              <div className="text-[10px] font-medium tracking-[0.18em] text-[#94A3B8] uppercase">Education</div>
+              <div className="mt-3 text-sm font-medium text-[#F8FAFC]">{profileData.education}</div>
             </div>
 
-            <div className="rounded-xl border border-[#D8D3C8] bg-[#FFFCF2] p-4 md:col-span-2 xl:col-span-2">
-              <div className="text-[10px] font-medium tracking-[0.18em] text-[#8ea0b6] uppercase">Core Skills</div>
+            <div className="rounded-xl border border-[#26354C] bg-[#0B1220] p-4 md:col-span-2 xl:col-span-2">
+              <div className="text-[10px] font-medium tracking-[0.18em] text-[#94A3B8] uppercase">Core Skills</div>
               <div className="mt-3 flex flex-wrap gap-2">
                 {coreSkills.map((skill) => (
-                  <span key={skill} className="rounded-md border border-[#D8D3C8] bg-[#FCE2D6] px-2.5 py-1 text-[10px] font-medium tracking-[0.12em] text-[#3F3D3B] uppercase">
+                  <span key={skill} className="rounded-md border border-[#26354C] bg-[#1C2540] px-2.5 py-1 text-[10px] font-medium tracking-[0.12em] text-[#CBD5E1] uppercase">
                     {skill}
                   </span>
                 ))}
               </div>
             </div>
 
-            <div className="rounded-xl border border-[#D8D3C8] bg-[#FFFCF2] p-4">
-              <div className="text-[10px] font-medium tracking-[0.18em] text-[#8ea0b6] uppercase">Best Project</div>
-              <div className="mt-3 text-sm font-medium text-[#242323]">Sales Data Analysis</div>
+            <div className="rounded-xl border border-[#26354C] bg-[#0B1220] p-4">
+              <div className="text-[10px] font-medium tracking-[0.18em] text-[#94A3B8] uppercase">Best Project</div>
+              <div className="mt-3 text-sm font-medium text-[#F8FAFC]">Sales Data Analysis</div>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ export default function RecruiterViewSection({ onCursorChange }: Readonly<Recrui
             <a
               href="/bhavesh-suthar-resume.txt"
               download="Bhavesh-Suthar-Resume.txt"
-              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#242323] px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#FFFCF2] hover:bg-[#F15A24]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg bg-[#38BDF8] px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#0B1220] hover:bg-[#7DD3FC]"
               onMouseEnter={() => onCursorChange("RESUME")}
               onMouseLeave={() => onCursorChange("")}
             >
@@ -79,7 +79,7 @@ export default function RecruiterViewSection({ onCursorChange }: Readonly<Recrui
               href="https://github.com/bhavesh-gff"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#242323] bg-transparent px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#242323] hover:bg-[#242323] hover:text-[#FFFCF2]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#F8FAFC] bg-transparent px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#F8FAFC] hover:bg-[#F8FAFC] hover:text-[#0B1220]"
               onMouseEnter={() => onCursorChange("GITHUB")}
               onMouseLeave={() => onCursorChange("")}
             >
@@ -90,7 +90,7 @@ export default function RecruiterViewSection({ onCursorChange }: Readonly<Recrui
               href="https://www.linkedin.com/in/bhavesh-suthar-00761b315/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#242323] bg-transparent px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#242323] hover:bg-[#242323] hover:text-[#FFFCF2]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-[#F8FAFC] bg-transparent px-4 py-3 text-[10px] font-semibold tracking-[0.16em] text-[#F8FAFC] hover:bg-[#F8FAFC] hover:text-[#0B1220]"
               onMouseEnter={() => onCursorChange("LINKEDIN")}
               onMouseLeave={() => onCursorChange("")}
             >

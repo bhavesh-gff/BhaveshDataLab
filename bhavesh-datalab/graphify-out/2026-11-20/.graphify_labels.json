@@ -1,0 +1,17 @@
+{
+  "0": "package.json",
+  "1": "compilerOptions",
+  "2": "framer-motion",
+  "3": "lucide-react",
+  "4": "page.tsx",
+  "5": "dependencies",
+  "6": "devDependencies",
+  "7": "SkillsSection.tsx",
+  "8": "ContactSection.tsx",
+  "9": "ProofSection.tsx",
+  "10": "scripts",
+  "11": "next.config.mjs",
+  "12": "next-env.d.ts",
+  "13": "postcss.config.mjs",
+  "14": "global.d.ts"
+}

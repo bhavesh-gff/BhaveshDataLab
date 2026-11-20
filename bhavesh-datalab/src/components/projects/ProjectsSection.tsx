@@ -13,8 +13,8 @@ export default function ProjectsSection({ onCursorChange }: Readonly<ProjectsSec
       <div className="w-full max-w-7xl">
         <div className="mb-8 flex items-end justify-between gap-4">
           <div>
-            <div className="text-[10px] font-medium tracking-[0.22em] text-[#F15A24] uppercase">Featured Work</div>
-            <h2 className="mt-2 text-2xl font-semibold text-[#242323] sm:text-3xl">Projects</h2>
+            <div className="text-[10px] font-medium tracking-[0.22em] text-[#38BDF8] uppercase">Featured Work</div>
+            <h2 className="mt-2 text-2xl font-semibold text-[#F8FAFC] sm:text-3xl">Projects</h2>
           </div>
         </div>
 
